@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+</head>
+<div aling="right">
+    <a href="Index.html">Inicio</a>
+   
+</div>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        font-size: large;
+        background-image: url(https://previews.123rf.com/images/mikabesfamilnaya/mikabesfamilnaya1610/mikabesfamilnaya161000099/63951890-%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AA%E3%83%83%E3%82%B7%E3%83%A5%E3%81%AA%E3%82%AB%E3%83%A9%E3%83%BC%E3%81%A8%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%83%97%E3%81%AE%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E3%80%82%E3%82%B7%E3%83%BC%E3%83%A0%E3%83%AC%E3%82%B9%E3%81%AA%E3%82%AB%E3%83%A9%E3%83%95%E3%83%AB%E3%81%AA%E3%83%91%E3%82%B9%E3%83%86%E3%83%AB-%E3%82%AB%E3%83%A9%E3%83%BC%E3%81%AE%E8%83%8C%E6%99%AF.jpg?fj=1);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+</style>
+<body>
+    <h1>Realiza tu Pedido</h1>
+    <img src="img/Pedido.jpg" alt="Pedido" width="200px">
+    <br>
+    <br>
+
+    <form action="pedido.js">
+        <label for="Nombre">Ingresa tu Nombre</label><br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+        
+        <br>
+        <br>
+        <br>
+
+        <label for="Telefono">Ingresa tu Telefono</label><br>
+        <input type="tel" id="Tel" name="Tel" placeholder="Telefono" maxlength="10">
+         
+        <br>
+        <br>
+        <br>
+
+        <label for="Correo Electronico">Ingresa tu Correo Electronico</label><br>
+        <input type="email" id="Correo" name="Correo" placeholder="Correo Electronico">
+        <br>
+        <br>
+        <br>
+
+        <label for="Fecha Entrega">Fecha de Entrega</label><br>
+        <input type="date" id="fecha" name="fecha">
+
+        <h2>Selecciona un Paquete (Si lo deseas)</h2>
+        <input type="radio" id="Bonk" name="Paquete" value="Bonk">
+        <label for="Bonk">Paquete Bonk  </label><br><br>
+        <input type="radio" id="Empanzones" name="Paquete" value="Empanzones">
+        <label for="Empanzones">Paquete Empanzones</label><br><br>
+        <input type="radio" id="Ñom Ñom" name="Paquete" value="Ñom Ñom">
+        <label for="Ñom Ñom">Paquete Nom Nom</label><br><br>
+
+        <h2>Tipo de Pastel</h2>
+        <input type="radio" id="Individual" name="Tamaño" value="Individual">
+        <label for="Individual">Individual  </label><br><br>
+        <input type="radio" id="Familiar" name="Tamaño" value="Familiar">
+        <label for="Familiar">Familiar   (+$100)</label><br><br>
+       
+         
+        <h2>Sabores (1 o mas)</h2>
+        <input type="checkbox" id="Sab" name="Sabor" value="Chomcolate">
+        <label for="Chomcolate">Chomcolate </label>
+        <input type="checkbox" id="Sab" name="Sabor" value="Fremsa">
+        <label for="Fremsa">Fremsa </label>
+        <input type="checkbox" id="Sab" name="Sabor" value="Tres Lemches">
+        <label for="Tres Lemches">Tres Lemches </label>
+        <input type="checkbox" id="Sab" name="Sabor" value="Vaimnilla">
+        <label for="Vaimnilla">Vaimnilla </label>
+
+        <br>
+
+        <h2>Adornos (1 o mas)</h2>
+        <input type="checkbox" id="Ador" name="Adornos" value="Imagem">
+        <label for="Imagem">Imagem </label>
+        <input type="checkbox" id="Ador" name="Adornos" value="ImagemPers">
+        <label for="ImagemPers">Imagem Personalizada </label>
+        <input type="checkbox" id="Ador" name="Adornos" value="Temxto">
+        <label for="Temxto">Temxto Personalizado </label>
+        <input type="checkbox" id="Ador" name="Adornos" value="Decoracion">
+        <label for="Decoracion">Decoracion </label>
+        <br>
+        <br>
+
+        <input type="text" id="Text" name="Texto" placeholder="Texto Personalizado">
+        <label for="Texto">Texto Personalizado</label>
+        <br>
+        <br>
+        
+        Seleccione Imagen predeterminada
+        <select name="imagen predeterminada">
+            <option value="0">...</option>
+            <option value="1">Uno</option>
+            <option value="2">Dos</option>
+            <option value="3">Tres</option>
+          </select>
+          
+          <br>
+          <br>
+
+        <input type="file" id="IMG" name="imagen" value="none" >
+        <label for="imagen">Imagen Personalizada</label>
+
+        <br>
+        <br>
+
+
+        <br>
+        <br>
+        
+        <a href="./Felicidades.html">
+            <input type="button" value="Realizar Pedido">
+            </a>
+        <input type="reset" value="Restablecer">
+
+    </form>
+
+    
+</body>
